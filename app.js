@@ -80,3 +80,68 @@ var pets = {
 }
 
 var fido = pets.dogs[0]
+
+
+// DAY 2
+
+let fridge = {
+    color: "white",
+    contents: {
+        dairy: [],
+        meats: [],
+        veggies: [],
+        fruits: []   
+    },
+    brand: {
+        name: "GE",
+        supportPhone: "2139021938201"
+    },
+    hasPower: true,
+    temperature: {
+        celcius: 1
+    }
+}
+
+let bottle = {
+    capacityAmount: 20,
+    capacityType: "ounces",
+    capacity: this.capacityAmount + this.CapcityType,
+}
+
+const ironman = {
+  name: "Tony Stark",
+  suffix: "Jr.",
+  prefix: "Mr."
+}
+
+
+function greet(person){
+  if(!person){
+    throw new Error("You must provide a person to greet")
+  }
+  console.log(
+    `Hello ${person.name} ${person.suffix || ''}`
+  )
+}
+
+let students = [
+  {name: "Jill", suffix: "Sr"},
+  {name: "Bill", suffix: "Jr"},
+  {name: "Nill", suffix: ""}
+]
+
+function massGreeter(people){
+  if(!Array.isArray(people)){
+    throw new Error("You must provide a list of people to greet")
+  }
+  for(let i = 0; i < people.length; i++){
+    let person = people[i]
+    console.log(`Hello ${person.name} ${Date.now()}`)
+  }
+}
+
+
+
+
+
+
